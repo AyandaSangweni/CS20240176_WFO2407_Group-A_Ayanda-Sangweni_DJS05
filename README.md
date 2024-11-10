@@ -67,3 +67,29 @@ Ensure your code is well-commented and adheres to best practices for readability
 - **Documentation**: Clarity of your approach and reflections in the README.md.
 
 This challenge is an excellent opportunity to demonstrate your understanding of state management concepts and functional programming principles. Good luck!
+
+## Overview
+This project demonstrates a simple, Redux-like state management system implemented in vanilla JavaScript. It simulates Redux's core concepts and uses an HTML file to open and interact with the JavaScript file in a web browser. The app implements a counter with actions to add, subtract, and reset, with each state change displayed in the browser console.
+
+## How to Run
+1. Open the `index.html` in a web browser.
+2. Open the browser’s Developer Console.
+3. Observe the console for log messages showing the initial state and each state change as actions are dispatched.
+
+## Approach
+The project demonstrates Redux-inspired state management by implementing the following:
+- **Initial State**: A simple state with a count value of `0`.
+- **Actions**: Three actions—`ADD`, `SUBTRACT`, and `RESET`—to adjust the count.
+- **Reducer Function**: Updates the state based on the action dispatched, returning a new state.
+- **Store Initialization**: A custom store with methods to:
+  - `getState` retrieves the current state.
+  - `dispatch` applies actions and updates the state.
+  - `subscribe` registers listeners, logging changes to the console.
+
+## Challenges
+- The main challenge I faced was figuring out how to run the code and see the console output. 
+- Initially, I completed the JavaScript logic but wasn't seeing results immediately. 
+- I researched a few options, like running the file in Node.js or a browser console, but in the end, the simplest solution was to add a basic HTML file. Linking `store.js` in an HTML file made it easy to open the file in a web browser and check the console. 
+- I found this approach straightforward and effective, as I could simply open `index.html` and view the output in the browser console without any additional setup.
+
+- This solution helped me overcome the issue of accessing console logs easily and observing the state changes as I worked through each scenario.

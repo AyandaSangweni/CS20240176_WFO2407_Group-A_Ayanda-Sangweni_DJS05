@@ -1,4 +1,3 @@
-// Your JavaScript code (same as before)
 const initialState = {
     count: 0,
   };
